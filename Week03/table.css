@@ -4,7 +4,7 @@ body {
 
 table {
     color: #333333;
-    border-spacing: none;
+    border-collapse: collapse;
     margin: auto;
 }
 
@@ -13,6 +13,7 @@ th {
     background-color: #90b4d6;
     text-align: center;
     letter-spacing: 2px;
+    padding: 5px 30px 5px 10px;
 }
 
 td {
