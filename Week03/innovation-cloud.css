@@ -12,12 +12,13 @@ html, body {
 body {
     font-family: "Lato", sans-serif;
     color: #ffffff;
+    margin: 0px;
 }
 
 .container {
     margin: auto;
-    padding: 0 10px;
-    height: 800px;
+    padding: 0px 10px;
+    height: 500px;
     background-image: url("PirateShip.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -32,7 +33,7 @@ h1 {
     text-transform: uppercase;
 }
 
-p {
+#p1 {
     font-size: 27px;
     font-weight: 100;
     margin: 20px;
@@ -52,4 +53,41 @@ p {
     background: #000;
     border-color: #000;
     cursor: pointer;
+}
+
+main {
+    font-family: "Lato", sans-serif;
+    margin: 50px 200px;
+    max-width: 1060px;
+    padding: 0 10px;
+}
+
+img {
+    float: left;
+    width: 180px;
+    height: 100px;
+    margin: 10px 20px 10px 0;
+}
+
+h2 {
+    color: #234465;
+    margin: 10px 0;
+}
+
+#p2 {
+    font-size: 16px;
+    color: #333333;
+    margin: 10px 0;
+    letter-spacing: 0;
+    width: auto;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0px;
+    text-align: center;
 }
