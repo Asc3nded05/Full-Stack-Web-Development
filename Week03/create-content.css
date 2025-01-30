@@ -1,0 +1,26 @@
+main {
+    font-family: "Lato", sans-serif;
+    margin: 50px 200px;
+    max-width: 1060px;
+    padding: 0 10px;
+}
+
+img {
+    float: left;
+    width: 180px;
+    height: 100px;
+    margin: 10px 20px 10px 0;
+}
+
+h2 {
+    color: #234465;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    color: #333333;
+    margin: 10px 0;
+    letter-spacing: 0;
+    width: auto;
+}
