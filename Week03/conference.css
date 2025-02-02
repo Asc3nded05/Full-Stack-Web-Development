@@ -1,0 +1,231 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #293f50;
+    height: 600px;
+    text-align: center; /* Center the button */
+}
+
+ul {
+    background-color: #293f50;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+li {
+    line-height: 30px;
+    height: 30px;
+    padding: 20px;
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+#dates {
+    float: right;
+    padding-right: 20px;
+}
+
+#mainTitle {
+    font-size: 60px;
+    font-family: "Lato", sans-serif;
+    font-weight: 150;
+    text-align: center;
+    padding-top: 80px;
+}
+
+#subTitle {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#description {
+    text-align: center;
+}
+
+.btn {
+    color: #ffffff;
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-top: 40px;
+    padding: 20px 35px;
+    font-size: 16px;
+    cursor: pointer; /* Add cursor pointer for better UX */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #293f50; /* Change text color to the blue color */
+}
+
+#info {
+    color: #293f50;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #293f50;
+    width: auto;
+}
+
+th, td {
+    padding: 0;
+    vertical-align: top;
+    text-align: left;
+}
+
+.infoTableItem1 {
+    width: 300px;
+    padding: 10px 0;
+    padding-left: 90px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.infoTableItem2 {
+    width: 300px;
+    padding: 10px 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.infoTableItem3 {
+    width: 300px;
+    padding: 10px 0;
+    padding-left: 30px;
+    padding-right: 90px;
+    box-sizing: border-box;
+}
+
+.infoImage {
+    width: 300px;
+    height: 225px;
+    display: block;
+}
+
+.infoCategory, .infoTitle, .infoDescription {
+    width: 100%; 
+    padding: 0 10px;
+    box-sizing: border-box; 
+}
+
+.infoCategory {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.infoTitle {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.infoDescription {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.footerContainer {
+    background-color: #293f50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#copyright {
+    font-size: 20px;
+}
+
+#bottomNav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bottomNavItem {
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+
+
+/* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 100;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6u8w4BMUTPHh30AUi-qJCY.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 100;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6u8w4BMUTPHh30AXC-q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh7USSwaPGR_p.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
