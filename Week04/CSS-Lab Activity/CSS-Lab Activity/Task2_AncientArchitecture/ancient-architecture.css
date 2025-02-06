@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #e2d7aa;
+    color: #000000;
+    font-size: 16px;
+    width: 1180px;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+img {
+    /*width: 1100px;*/
+    width: 100%;
+    height: 450px;
+}
+
+.img-container {
+    /*width: 1600px;*/
+    width: 100%;
+    /*height: 450;*/
+    height: auto;
+    margin-top: 65px;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 65px;
+    font-family: "Indie Flower", cursive;
+    margin-bottom: -30px;
+}
+
+nav {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -50px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+nav ul li:first-of-type a,
+nav ul li:last-of-type a {
+    color: #0a2d4a;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+article {
+    flex: 1 1 350px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px; 
+    box-sizing: border-box;
+
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+h3 {
+    margin-top: 0px;
+}
+
+h3 a {
+    text-decoration: none;
+    color: blue;
+}
+
+article img {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+article p:first-of-type {
+    text-align: justify;
+}
+
+p::first-letter {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-size: 40px;
+}
+
+span a {
+    background-image: url(images/bg2.jpg);
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+article p:last-of-type span:first-of-type a::before {
+	content: url("images/comment.png");
+    position: relative;
+	right: 5px;
+	top: 7px;
+	padding: 10px;
+}
+
+.comments {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: -80px;
+}
+
+.readmore {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+footer {
+    margin: 0px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
