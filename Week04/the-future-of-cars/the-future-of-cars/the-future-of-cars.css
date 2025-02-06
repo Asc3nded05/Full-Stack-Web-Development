@@ -11,6 +11,7 @@ body {
 header {
     background-image: url("images/car-future.jpg");
     background-size: cover;
+    background-position: 5px, 0;
     height: 700px;
 }
 
