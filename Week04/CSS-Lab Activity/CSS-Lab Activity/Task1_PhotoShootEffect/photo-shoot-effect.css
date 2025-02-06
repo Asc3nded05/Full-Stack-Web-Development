@@ -44,8 +44,8 @@ p:nth-of-type(2) {
 }
 
 img {
-    width: 500px;
-    height: 300px;
+    width: 540px;
+    height: 350px;
     border: none;
     border-radius: 7px;
 }
@@ -69,35 +69,35 @@ ul li:nth-child(1) a {
     font-size: 30px;
     list-style-type: none;
     text-transform: lowercase;
-  }
-  
-  ul li:nth-child(2) a {
+}
+
+ul li:nth-child(2) a {
     color: #8EC45B;
     margin: 5px 2px;
     padding: 7px 10px 4px;
     font-size: 30px;
     list-style-type: none;
-  }
-  
-  ul li:nth-child(3) a {
+}
+
+ul li:nth-child(3) a {
     color: #ffffff;
     margin: 5px 2px;
     padding: 7px 10px 4px;
     font-size: 30px;
     list-style-type: none;
     text-transform: uppercase;
-  }
+}
 
-  ul {
+ul {
     margin-left: -40px;
-  }
+}
 
-  li {
+li {
     display: inline;
-  }
+}
 
 article {
-    height: 455px;
+    height: 490px;
     background-color: #213E4A;
     padding: 20px;
     padding-top: 1px;
