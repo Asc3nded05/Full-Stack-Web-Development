@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First 20 Numbers</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let numItems = 20;
+        let currentNum = 1;
+
+        let numCols = 4;
+        let numRows = Math.ceil(numItems / numCols);     
+
+        let html = "<table>";
+            
+        for (let i = 0; i < numRows; i++){
+            html += "<tr>"
+            for (let j = 0; j < numCols; j++){
+                if (currentNum <= numItems){
+                    html += "<td>" + currentNum + "</td>";
+                    currentNum++;
+                }
+                else {
+                    html += "<td> </td>";
+                    currentNum++;
+                }
+            }
+            html += "</tr>";
+        }
+        html += "</table>";
+
+        document.writeln(
+            html
+        );
+    </script>
+</body>
+</html>
