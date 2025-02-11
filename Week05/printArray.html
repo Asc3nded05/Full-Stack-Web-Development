@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Array</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            border: 2px solid black; 
+        }
+
+        th, td {
+            border-right: 2px solid black;
+            border-left: 2px solid black;
+            padding: 8px;
+            text-align: left;
+            width: 250px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            border-bottom: 2px solid black;
+        }
+        tr:first-child td {
+            border-bottom: 2px solid black; 
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="arrayName" placeholder="Enter an array name">
+    <input type="text" id="arrayItem" placeholder="Enter an array element">
+    <button id="btnSubmit" onclick="press()">Submit Item</button>
+
+    <div id="tableContainer"></div>
+
+    <script>
+        const newArray = [];
+        let arrayName;
+
+        function press() {
+            arrayName = document.getElementById("arrayName").value;
+
+            newArray.push(document.getElementById("arrayItem").value);
+            document.getElementById("arrayItem").value = "";
+
+            let numItems = newArray.length;
+
+            let html = "<table><tr><th>Input</th><th>Output</th></tr>";
+            
+            html += "<tr><td>" + arrayName + " = [";
+
+            for (let i = 0; i < numItems; i++) {
+                html += newArray[i];
+
+                if (i != (numItems - 1)){
+                    html += ", ";
+                } else {
+                    html += "];";
+                }
+            }
+
+            html += "</td><td>" + newArray[0] + "</td></tr>";
+
+            if (numItems > 1){
+                for (let i = 1; i < numItems; i++) {
+                html += "<tr><td></td><td>" + newArray[i] + "</td></tr>";
+                }
+            }
+            
+            html += "</table>";
+
+            document.getElementById("tableContainer").innerHTML = html;
+        }
+    </script>
+</body>
+</html>
