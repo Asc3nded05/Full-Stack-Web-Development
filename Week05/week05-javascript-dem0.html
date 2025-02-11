@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Demo</title>
+</head>
+
+<body>
+
+    <p id='textHolder'></p>
+
+    <p class='test' ondblclick="increaseFont()">Welcome to full stack web development</p>
+
+    <script>
+        //Use let or const instead of var when declaring variables
+        let fontSize = 12;
+
+        function sayHello(name){
+            alert("Hello " + name);
+        }
+
+        function press(){
+            let name = document.getElementById("username").value;
+            sayHello(name);
+
+            let p = document.getElementById("textHolder");
+            p.style = "font-size:20px; color:green;";
+        }
+
+        function increaseFont(){
+            let p2 = document.getElementsByClassName("test")[0];
+            fontSize += 5;
+
+            p2.style = "font-size: " + fontSize + "px;"
+        }
+
+        if(true){
+            let x=20;
+            var y=30;
+            document.writeln(x);
+            document.writeln(y);
+        }
+
+        /*document.writeln(x)*/
+        document.writeln(y);
+
+        for (let i = 0; i < 10; i++) {
+            document.writeln(
+                "<h1>Hello World</h1>"
+            );
+        }
+
+        document.writeln(
+            "<p class='csci295'>Welcome to full stack web development</p>"
+        );
+
+        document.getElementById('textHolder').innerHTML = "This is demo text.";
+
+        document.getElementsByClassName('test')[0].innerHTML = "This replaces the previous text";
+
+        console.log("This is output to the terminal, not to the HTML page.");
+
+        alert("This is a popup dialogue box.");
+
+        const riley = {
+            firstName : "Riley",
+            lastName : "Van Heukelum",
+            birthYear : 2005,
+            birthMonth : 9,
+            birthDay : 6,
+            major : "Computer Science",
+            fullName : function() {
+                return this.firstName + " " + this.lastName;
+            },
+            fullBirthday : function() {
+                return this.birthMonth + "/" + this.birthDay + "/" + this.birthYear;
+            },
+            message : function(text) {
+                return this.firstName + " " + this.lastName + " is saying " + message;
+            }
+        };
+
+        let info = riley.firstName + '\n' + riley.lastName + '\n' + riley.fullBirthday();
+
+        document.writeln(
+            "<p class='person'>" + info + "</p>"
+        );
+
+        document.getElementById("textHolder").innerHTML = riley.message("Hello there!");
+    </script>
+
+    <input type="text" id="username" placeholder="Enter your name">
+    <button id="btnSubmit" onclick="press()">Submit</button>
+
+</body>
+
+</html>
