@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic List</title>
+</head>
+<body>
+    <input type="text" id="listItem" placeholder="Add element to list">
+    <button id="btnSubmit" onclick="press()">Submit Item</button>
+
+    <ul id="list1"></ul>
+
+    <script>
+        function press() {
+            let item = document.getElementById("listItem").value;
+            
+            if (item.trim() !== "") { 
+                const newItem = document.createElement("li");
+                newItem.textContent = item; 
+
+                document.getElementById("list1").appendChild(newItem); 
+                document.getElementById("listItem").value = "";
+            }
+        }
+    </script>
+</body>
+</html>

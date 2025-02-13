@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+</head>
+<body>
+    <div id="div1" onclick="changeColor()" onmouseover="changeColor()" onmouseout="changeColor2()">
+        Filler Text. Filler Text. Filler Text. Filler Text. Filler Text. Filler Text. Filler Text. Filler Text. Filler Text.
+    </div>
+
+    <script>
+        function changeColor() {
+            document.getElementById("div1").style.backgroundColor = 'red';
+        }
+
+        function changeColor2() {
+            document.getElementById("div1").style.backgroundColor = 'white';
+        }
+    </script>
+</body>
+</html>

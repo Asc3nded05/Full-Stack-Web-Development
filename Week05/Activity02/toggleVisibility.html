@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Visibility</title>
+</head>
+<body>
+    <div id="div1">
+        <h1>TITLE 1</h1>
+
+        <p>Paragraph text here</p>
+    </div>
+
+    <button id="btnSubmit" onclick="press()">Click Here</button>
+
+    <script>
+        let numClicks = 0;
+
+        function press() {
+            if (numClicks % 2 == 0){
+                document.getElementById("div1").style.display = "none";
+            }
+            else {
+                document.getElementById("div1").style.display = "block";
+            }
+
+            numClicks++;
+        }
+    </script>
+</body>
+</html>
