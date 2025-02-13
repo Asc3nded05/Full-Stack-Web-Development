@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        button {width: 60px; height: 60px; text-align: center; font-size: 16px;}
+        #display {width: 250px; height: 40px; border: 2px solid black;}
+        .wide-button {width: 100%;}
+    </style>
+</head>
+<body>
+    <div id="display"></div>
+    <table id="buttons">
+        <tr>
+            <td><button id="btn7" onclick="input('7')">7</button></td>
+            <td><button id="btn8" onclick="input('8')">8</button></td>
+            <td><button id="btn9" onclick="input('9')">9</button></td>
+            <td><button id="btnAdd" onclick="input('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button id="btn4" onclick="input('4')">4</button></td>
+            <td><button id="btn5" onclick="input('5')">5</button></td>
+            <td><button id="btn6" onclick="input('6')">6</button></td>
+            <td><button id="btnSubtract" onclick="input('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button id="btn1" onclick="input('1')">1</button></td>
+            <td><button id="btn2" onclick="input('2')">2</button></td>
+            <td><button id="btn3" onclick="input('3')">3</button></td>
+            <td><button id="btnMutiply" onclick="input('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button id="btnClear" onclick="clearDisplay()">Clear</button></td>
+            <td><button id="btn1" onclick="input('0')">0</button></td>
+            <td><button id="btnEquals" onclick="input('.')">.</button></td>
+            <td><button id="btnDivide" onclick="input('/')">/</button></td>
+        </tr>
+        <tr>
+            <td colspan="4"><button id="btnEquals" class="wide-button" onclick="equals()">=</button></td>
+        </tr>
+    </table>
+
+    <p id="history"></p>
+
+    <script>
+        function input(element) {
+            document.getElementById("display").textContent += element;
+        }
+
+        function clearDisplay() {
+            document.getElementById("display").textContent = "";
+        }
+
+        function equals() {
+            document.getElementById("display").textContent = eval(document.getElementById("display").textContent);
+        }
+    </script>
+</body>
+</html>
