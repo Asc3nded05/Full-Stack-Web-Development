@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Data</title>
+    <script src="https://cdn.plot.ly/plotly-3.0.0.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <h1>COVID-19 Health Data by Country</h1>
+
+    <p></p>
+
+    <input type="text" id="country" placeholder="Search by country name">
+    <button id="btnSubmit" onclick="getData()">Search</button>
+
+    <div id="countryGraph"></div>
+
+    <script>
+        let countryName, numCases, numDeaths, numRecovered, numActive;
+
+        async function getAPIResponse() {
+            const url = "https://disease.sh/v3/covid-19/countries/" + document.getElementById("country").value;;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`Response status: ${response.status}`);
+                }
+
+                const json = await response.json();
+                console.log(json);
+                return json;
+            } catch (error) {
+                console.error(error.message);
+            }
+        }
+
+        async function getData() {
+            let data = await getAPIResponse();
+            
+            countryName = data.country;
+            numCases = data.cases;
+            numDeaths = data.deaths;
+            numRecovered = data.recovered;
+            numActive = data.active;
+
+            plotGraph();
+        }
+
+        function plotGraph() {
+            var data = [{
+                values: [numRecovered, numActive, numDeaths],
+                labels: ['Recovered', 'Active', 'Deaths'],
+                type: 'pie'
+            }];
+
+            var layout = {
+                title: {
+                    text: countryName + " COVID-19 Cases Breakdown"
+                },
+                height: 400,
+                width: 500
+            };
+
+            Plotly.newPlot('countryGraph', data, layout);
+        }
+    </script>    
+</body>
+</html>
