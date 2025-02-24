@@ -150,7 +150,7 @@ function displayCharacter(index) {
             <p id="work">
                 <ul>
                     <li>Occupation: ${character.work["occupation"]}</li>
-                    <li>Base: ${character.work["base"]}</li>
+                    <li>Base: <ul><li>${character.work["base"].split(", ").join("</li><li>")}</li></ul></li>
                 </ul>
             </p>
 
@@ -158,8 +158,8 @@ function displayCharacter(index) {
             <hr>
             <p id="connections">
                 <ul>
-                    <li>Group Affiliations: ${character.connections["group-affiliation"]}</li>
-                    <li>Relatives: ${character.connections["relatives"]}</li>
+                    <li>Group Affiliations: <ul><li>${character.connections["group-affiliation"].split(", ").join("</li><li>")}</li></ul></li>
+                    <li>Relatives: <ul><li>${character.connections["relatives"].split(", ").join("</li><li>")}</li></ul></li>
                 </ul>
             </p>
         </div>
@@ -167,4 +167,3 @@ function displayCharacter(index) {
 
     document.getElementById("characterInfo").innerHTML = characterInfo;
 }
-

@@ -122,12 +122,16 @@ section {
 }
 
 hr {
-    color: #052F5F;
-    height: 2px;
-    border-width: 0;
-    color: gray;
-    background-color: gray"
+    border: 0;
+    height: 5px;
+    background-color: #F6AE2D;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    clear:both;
+    display:block;
+    width: 100%;        
 }
+
 
 #characterInfo {
     display: flex;
@@ -175,4 +179,21 @@ ul {
 
 #biography, #powerstats, #appearance, #work, #connections {
     margin-top: 0px;
+}
+
+#instructionSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#instructions {
+    text-align: justify;
+    font-size: 25px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border: #F6AE2D 5px solid;
+    border-radius: 5px;
 }
