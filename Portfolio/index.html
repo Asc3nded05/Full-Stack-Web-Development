@@ -9,33 +9,48 @@
 </head>
 
 <body>
-    <header id="topBanner">
-        <img src="" alt="Logo" id="logo">
+    <header class="topBanner" id="topBannerMainPage">
+        <div id="logoTitleContainer">
+            <img src="Resources/Logo.png" alt="Logo" id="logo" height=75px, width=auto>
+            <h2 id="titleName">Riley <span style="white-space: nowrap;">Van Heukelum</span></h2>
+        </div>
 
-        <nav>
+        <nav id="headerNav">
             <ul>
-                <li><a href="index.html" title="home" id="home">Home</a></li>
-                <li><a href="aboutMe.html" title="aboutMe" id="aboutMe">About Me</a></li>
-                <li><a href="projects.html" title="projects" id="projects">Projects</a></li>
-                <li><a href="contact.html" title="contact" id="contact">Contact</a></li>
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="aboutMe.html" id="aboutMe" style="white-space: nowrap;">About Me</a></li>
+                <li><a href="projects.html" id="projects">Projects</a></li>
+                <li><a href="contact.html" id="contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="mainContent">
-        <div class="introContainer">
+    <div id="mainContent">
+        <div id="introContainer">
             <aside id="intro">
+                <img src="Resources/SmallerBackground.jpg" id="smallerPortrait" alt="Riley Van Heukelum">
+
                 <hr class="introLine">
-                <p id="introText">Hello! My name is <br> <br> <span class="riley">Riley Van Heukelum</span> <br> <br> I am a web
-                    designer, software engineer, and graphic designer with a passion for art, philosophy, and computers.</p>
+                <p id="introText">Hello! My name is <br> <br> <span class="riley">Riley <span
+                            style="white-space: nowrap;">Van Heukelum</span></span> <br> <br> I am a web
+                    designer, software engineer, and graphic designer with a passion for computers, art, and philosophy.
+                </p>
+                <button id="introButton" onclick="location.href='projects.html'">Go to Project Gallery</button>
                 <hr class="introLine">
             </aside>
         </div>
-
-        <section id="home">
-            <div id="homeImage"></div>
-        </section>
     </div>
+
+    <footer>
+        <nav id="footerNav">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/rileyvanheukelum/" target="_blank" id="linkedIn">LinkedIn</a>
+                </li>
+                <li><a href="https://github.com/Asc3nded05" target="_blank" id="gitHub">GitHub</a></li>
+                <li><a href="mailto:rileyvanheukelum@gmail.com" id="email">Email</a></li>
+            </ul>
+        </nav>
+    </footer>
 
     <script src="portfolioJS.js" charset="utf-8"></script>
 </body>
