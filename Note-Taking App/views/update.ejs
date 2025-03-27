@@ -5,5 +5,15 @@
   <body>
     <h1>Update Note</h1>
 
+    <form method="POST" action="/update/<%= data.id %>">
+      <input type="text" name="title" value="<%= data.title %>" placeholder="Enter a Title" /> <br/>
+      <input type="text" name="content" value="<%= data.content %>" placeholder="Enter your content" /> <br/>
+      <label>
+        <input type="checkbox" <%= data.starred ? 'checked' : '' %> name="starred" />
+        Star
+      </label> <br/>
+      <input type="color" value="<%= data.color %>" name="color" /> <br/>
+      <input type="submit" />
+    </form>
   </body>
 </html>
