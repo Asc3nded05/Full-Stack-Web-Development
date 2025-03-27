@@ -1,0 +1,38 @@
+[
+  {
+    "id": "0",
+    "title": "Note 1",
+    "content": "content.......",
+    "starred": false,
+    "color": "#76b2a8",
+    "createdAt": "2025-03-26T21:12:49.396Z",
+    "updatedAt": "2025-03-26T21:12:49.408Z"
+  },
+  {
+    "id": "1",
+    "title": "Note 2",
+    "content": "content.......",
+    "starred": false,
+    "color": "#d28e8e",
+    "createdAt": "2025-03-26T21:13:04.292Z",
+    "updatedAt": "2025-03-26T21:13:04.292Z"
+  },
+  {
+    "id": "2",
+    "title": "Note 3",
+    "content": "content.......",
+    "starred": false,
+    "color": "#fef37c",
+    "createdAt": "2025-03-26T21:13:15.640Z",
+    "updatedAt": "2025-03-26T21:13:15.640Z"
+  },
+  {
+    "id": "3",
+    "title": "Note 4",
+    "content": "content.......",
+    "starred": false,
+    "color": "#0036a3",
+    "createdAt": "2025-03-26T21:13:41.313Z",
+    "updatedAt": "2025-03-26T21:13:41.313Z"
+  }
+]

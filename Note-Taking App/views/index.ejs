@@ -1,0 +1,23 @@
+<%- include('layout'); -%>
+
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1>Notes</h1>
+
+    <a href="/notes/new">
+      <button>New Note</button>
+    </a>
+
+
+    <ul>
+      <% data.forEach(function(note) { %>
+        <li style="background-color: <%= note.color %>;">
+          <%= note.title %>: <%= note.body %> <%= note.updatedAt %> 
+          <a href="/delete/<%= note.id %>" onclick="return confirm('Are you sure you want to delete this note?');">Delete</a>
+          <a href="/update/<%= note.id %>">Update</a>
+        </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
